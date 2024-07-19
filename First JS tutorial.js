@@ -62,3 +62,30 @@ myArray.shift();
 myArray.unshift([1,2,3]);
 console.log(myArray);
 
+function anotherChangeOfEntropy(massOfGas, specificHeatOfGas, initialTemp, finalTemp) {
+    console.log(massOfGas * specificHeatOfGas * Math.log(initialTemp / finalTemp));
+}
+
+anotherChangeOfEntropy(3.88, 1, 1273, 773);
+
+var myGlobal = 10;
+
+function func1() {
+   oppsGlobal = 5;
+  return oppsGlobal;
+}
+
+function func2() {
+    var output = ""
+    if (typeof myGlobal != "undefined") {
+        output += "myGlobal: " + myGlobal;
+    }
+    if (typeof oppsGlobal != "undefined") {
+        output += " oppsGlobal: " + oppsGlobal;
+    }
+    return output;
+}
+
+func1();
+func2();
+console.log(myGlobal);
