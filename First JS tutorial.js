@@ -34,3 +34,11 @@
 
 
     console.log(a * b);
+
+function changeOfEntropy(massOfGas, specificHeatOfGas, initialTemp, finalTemp) {
+    var result = massOfGas * specificHeatOfGas * Math.log(initialTemp / finalTemp);
+    return result;
+}
+
+console.log(changeOfEntropy(3.88, 1, 1273, 773));
+console.log(changeOfEntropy(3, 0.81, 647, 400));
