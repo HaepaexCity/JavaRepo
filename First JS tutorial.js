@@ -42,3 +42,23 @@ function changeOfEntropy(massOfGas, specificHeatOfGas, initialTemp, finalTemp) {
 
 console.log(changeOfEntropy(3.88, 1, 1273, 773));
 console.log(changeOfEntropy(3, 0.81, 647, 400));
+
+var firstArray = [46,458,29];
+console.log(firstArray[2]);
+
+firstArray[1] = 32
+console.log(firstArray);
+
+var myArray = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13,14]];
+aSix = myArray[1][2];
+anEleven = myArray[3][0][1];
+console.log(aSix);
+console.log(anEleven);
+
+myArray.push([15,16,17]);
+console.log(myArray);
+myArray.pop();
+myArray.shift();
+myArray.unshift([1,2,3]);
+console.log(myArray);
+
